@@ -11,6 +11,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.capstone.donghang.Fragments.FragmentCommunity;
+import com.capstone.donghang.PlanFragments.FragmentDetailedInformation;
 import com.capstone.donghang.PlanFragments.FragmentPlanList;
 import com.capstone.donghang.Fragments.FragmentProfile;
 import com.capstone.donghang.Fragments.FragmentSearch;
@@ -27,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         //set main fragment
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.add(R.id.frame_main, new FragmentPlanList()).commit();
+        fragmentTransaction.add(R.id.frame_main, new FragmentDetailedInformation()).commit();
 
         //BottomNavigationView item select event
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
